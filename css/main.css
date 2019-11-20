@@ -53,41 +53,62 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-	height: 110px;
-	border-bottom: 3px solid #77a466;
+	height: 300px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
+	flex-flow: column;
 }
 
 header h1 {
 	float: left;
 	margin: 0;
-	padding: 38px 0;
+    padding: 100px 0 15px 0;
+	border-bottom: 3px solid #77a466;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	float: right;
-	padding: 46px 0;
+	padding: 15px 0;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	/* margin-bottom: 90px; */
 }
+
+
 header nav ul {
 	margin: 0;
 	padding: 0;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
 }
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 1.14em;
 	padding: 0 10px;
-	display: inline;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
 }
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
+	padding: 10px 0 15px 0;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	text-align: center;
 }
 
 /*The widths are in a percentage!*/
@@ -98,29 +119,43 @@ header nav ul li a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: column;
 }
 
 .main-image {
 	height: auto;
 	float: left;
-	width: 100%;
+	width: 90%;
 }
 .main-image img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
+	margin-top: 85px;
+    margin-bottom: 5px;
 }
 
 .main-title {
 	height: auto;
 	float: left;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	/* width: 100%; */
 }
 .main-title h3 {
 	text-align: left;
-	padding: 5px 0;
+	/* padding: 5px 25px; */
 	color: #77a466;
+	width: 95%;
+	font-size: 1.25em;
+	padding-left: 21px;
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
 }
 .main-title p {
-	padding: 0;
+	padding: 0 21px;
 	font-size: 1em;
 	line-height: 25px;
 }
@@ -128,11 +163,12 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	width: 90%;
 	height: auto;
 	float: left;
 	border-top: 1px solid #eee;
 }
+
 
 .section-one h4 {
 	padding: 10px 0;
@@ -145,7 +181,7 @@ header nav ul li a{
 
 .section-two h4,
 .section-three h4 {
-	padding: 10px 30px;
+	padding: 10px 0px;
 }
 
 .menu {
@@ -161,11 +197,13 @@ header nav ul li a{
 	color: #333;
 	font-size: 1em;
 	line-height: 21px;
+	padding-left: 0px;
 }
 
 .address {
 	font-size: 1em;
 	line-height: 24px;
+	padding-left: 0;
 }
 
 /*The widths are in a percentage!*/
@@ -184,4 +222,105 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 1.14em;
+}
+
+@media(min-width: 768px) {
+	.bottom-section {
+		width: 100%;
+		display: flex;
+		flex-flow: row;
+		height: auto;
+	}
+
+	.section-one,
+.section-two,
+.section-three {
+	height: 300px;
+	margin-left: 30px;
+}
+}
+
+@media(min-width: 1200px){
+	body {
+		font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	}
+	
+	.container{
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	
+	header {
+		height: 100px;
+		margin: 0 auto;
+		display: inline-block;
+		width: 100%;
+	}
+	
+	header h1 {
+		float: left;
+		margin: 0;
+		padding: 38px 0;
+		width: 33%;
+		border: none;
+	}
+	
+	header nav {
+		float: right;
+		padding: 46px 50px;
+		display: inline;
+	}
+	header nav ul {
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+	}
+	header nav ul li {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 14px;
+		padding: 0 10px;
+		display: inline;
+	}
+	header nav ul li a{
+		text-decoration: none;
+		color:#77a466;
+		display: inline;
+	}
+
+	.main-image img {
+		width: 100%;
+		border-top: 3px solid #77a466;
+		border-bottom: 3px solid #77a466;
+		margin-top: 0;
+		margin-bottom: 5px;
+	}
+
+	.main-title {
+		height: auto;
+		float: left;
+		/* width: 100%; */
+		padding-left: 41px;
+	}
+	.main-title h3 {
+		text-align: left;
+		/* padding: 5px 25px; */
+		color: #77a466;
+		width: 97%;
+		font-size: 1.25em;
+		padding-left: 0px;
+	}
+.bottom-section {
+    width: 90%;
+    display: flex;
+    flex-flow: row;
+    height: 300px;
+}
+.section-one, .section-two, .section-three {
+	margin-left: 0;
+	padding: 0 7px;
+}
+footer {
+	margin-top: 30px;
+}
 }
