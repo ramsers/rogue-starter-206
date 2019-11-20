@@ -58,7 +58,7 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
+	width: 90%;
 	flex-flow: row wrap;
 }
 
@@ -76,8 +76,9 @@ header h1 span {
 }
 
 header nav {
-	padding: 15px 0;
-	width: 100%
+	/* padding: 15px 0; */
+	margin: 20px 0;
+	width: 100%;
 	/* display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-between; */
@@ -88,6 +89,7 @@ header nav {
 header nav ul {
 	margin: 0;
 	padding: 0;
+	list-style: none;
 	/* display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-between; */
@@ -96,7 +98,7 @@ header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 1.14em;
-	padding: 0 10px;
+	padding: 0 15px;
 	/* display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-between; */
@@ -129,7 +131,8 @@ header nav ul li a{
 .main-image img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
-	margin-top: 85px;
+	border-top: 3px solid #77a466;
+	margin-top: 100px;
     margin-bottom: 5px;
 }
 
@@ -147,7 +150,7 @@ header nav ul li a{
 	/* padding: 5px 25px; */
 	color: #77a466;
 	width: 95%;
-	font-size: 1.25em;
+	font-size: 1em;
 	padding-left: 21px;
 	/* display: flex;
 	justify-content: center;
@@ -173,8 +176,8 @@ header nav ul li a{
 }
 
 .section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
+	/* border-left: 1px solid #eee;
+	border-right: 1px solid #eee; */
 }
 
 .section-two h4,
@@ -320,7 +323,12 @@ footer span {
 	margin-left: 0;
 	padding: 0 7px;
 }
+.section-two {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
 footer {
+	width: 100%;
 	margin-top: 30px;
 }
 } 
