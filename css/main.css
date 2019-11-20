@@ -59,15 +59,14 @@ header {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	flex-flow: column;
+	flex-flow: row wrap;
 }
 
 header h1 {
-	float: left;
 	margin: 0;
-    padding: 100px 0 15px 0;
+    padding: 30px 0 15px 0;
 	border-bottom: 3px solid #77a466;
-	width: 90%;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -78,9 +77,10 @@ header h1 span {
 
 header nav {
 	padding: 15px 0;
-	display: flex;
+	width: 100%
+	/* display: flex;
 	flex-flow: column nowrap;
-	justify-content: space-between;
+	justify-content: space-between; */
 	/* margin-bottom: 90px; */
 }
 
@@ -88,18 +88,18 @@ header nav {
 header nav ul {
 	margin: 0;
 	padding: 0;
-	display: flex;
+	/* display: flex;
 	flex-flow: column nowrap;
-	justify-content: space-between;
+	justify-content: space-between; */
 }
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 1.14em;
 	padding: 0 10px;
-	display: flex;
+	/* display: flex;
 	flex-flow: column nowrap;
-	justify-content: space-between;
+	justify-content: space-between; */
 }
 header nav ul li a{
 	text-decoration: none;
@@ -119,12 +119,11 @@ header nav ul li a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: column;
+	flex-flow: row wrap;
 }
 
 .main-image {
 	height: auto;
-	float: left;
 	width: 90%;
 }
 .main-image img {
@@ -136,11 +135,11 @@ header nav ul li a{
 
 .main-title {
 	height: auto;
-	float: left;
-	display: flex;
+	width: 100%
+	/* display: flex;
 	flex-flow: column;
 	justify-content: center;
-	align-items: center;
+	align-items: center; */
 	/* width: 100%; */
 }
 .main-title h3 {
@@ -165,7 +164,6 @@ header nav ul li a{
 .section-three {
 	width: 90%;
 	height: auto;
-	float: left;
 	border-top: 1px solid #eee;
 }
 
@@ -225,18 +223,19 @@ footer span {
 }
 
 @media(min-width: 768px) {
-	.bottom-section {
-		width: 100%;
+	/* .bottom-section {
+		width: 30%;
 		display: flex;
 		flex-flow: row;
 		height: auto;
-	}
+	} */
 
 	.section-one,
 .section-two,
 .section-three {
 	height: 300px;
-	margin-left: 30px;
+	margin-left: 10px;
+	width: 30%;
 }
 }
 
@@ -266,13 +265,13 @@ footer span {
 	}
 	
 	header nav {
-		float: right;
-		padding: 46px 50px;
+		width: 55%;
+		padding: 46px 0px;
 		display: inline;
 	}
 	header nav ul {
 		margin: 0;
-		padding: 0;
+		padding: 48px 0px 0 210px;
 		display: inline-block;
 	}
 	header nav ul li {
@@ -299,22 +298,23 @@ footer span {
 	.main-title {
 		height: auto;
 		float: left;
-		/* width: 100%; */
+		 width: 100%;
 		padding-left: 41px;
 	}
 	.main-title h3 {
 		text-align: left;
-		/* padding: 5px 25px; */
+		padding: 5px 25px; 
 		color: #77a466;
 		width: 97%;
 		font-size: 1.25em;
-		padding-left: 0px;
+		padding-left: 23px;
 	}
 .bottom-section {
     width: 90%;
     display: flex;
     flex-flow: row;
-    height: 300px;
+	height: 300px;
+	margin-left: 20px;
 }
 .section-one, .section-two, .section-three {
 	margin-left: 0;
@@ -323,4 +323,4 @@ footer span {
 footer {
 	margin-top: 30px;
 }
-}
+} 
